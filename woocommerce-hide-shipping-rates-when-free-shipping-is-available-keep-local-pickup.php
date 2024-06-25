@@ -1,6 +1,7 @@
 /**
  * Hide shipping rates when free shipping is available, but keep "Local pickup" 
  * Updated to support WooCommerce 2.6 Shipping Zones
+ * Source: https://woocommerce.com/document/hide-other-shipping-methods-when-free-shipping-is-available/
  */
 add_filter( 'woocommerce_package_rates', 'hide_shipping_when_free_is_available', 10, 2 );
 function hide_shipping_when_free_is_available( $rates, $package ) {
